@@ -43,3 +43,8 @@ RPCApplication& RPCApplication::GetInstance()
     static RPCApplication app;
     return app;
 }
+
+RPCConfig& RPCApplication::GetConfig()
+{
+    return m_config;
+}

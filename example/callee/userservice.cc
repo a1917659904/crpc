@@ -33,6 +33,6 @@ int main(int argc, char** argv){
     RPCApplication::Init(argc, argv);
     RPCProvider provider;
     provider.NotifyService(new UserService());
-    provider.Run(8080);
+    provider.Run();
     return 0;
 }

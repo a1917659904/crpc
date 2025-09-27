@@ -12,4 +12,5 @@ public:
     static RPCConfig m_config;
     static void Init(int argc, char **argv);
     static RPCApplication& GetInstance();
+    static RPCConfig& GetConfig();
 };

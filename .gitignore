@@ -65,3 +65,5 @@ build/src/CMakeFiles/crpc.dir/rpc_config.cc.o
 build/src/CMakeFiles/crpc.dir/rpc_config.cc.o.d
 build/src/CMakeFiles/crpc.dir/rpc_provider.cc.o
 build/src/CMakeFiles/crpc.dir/rpc_provider.cc.o.d
+build/src/CMakeFiles/crpc.dir/cmake_clean_target.cmake
+lib/libcrpc.a
