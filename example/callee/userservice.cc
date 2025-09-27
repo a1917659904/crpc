@@ -1,7 +1,8 @@
 #include<iostream>
 #include<string>
-#include "../user.pb.h"
-
+#include "user.pb.h"
+#include "rpc_application.h"
+#include "rpc_provider.h"
 using namespace std;
 using namespace example;
 
@@ -28,6 +29,10 @@ public:
     }
 };
 
-int main(){
-    
+int main(int argc, char** argv){
+    RPCApplication::Init(argc, argv);
+    RPCProvider provider;
+    provider.NotifyService(new UserService());
+    provider.Run(8080);
+    return 0;
 }
